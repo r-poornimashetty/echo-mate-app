@@ -11,7 +11,7 @@ const ProfileEducation = ({
     <ul className='collection'>
          <li className="collection-item"> <h3 className="text-dark">{school}</h3></li>
           <li className='collection-item'>
-                <Moment format='DD-MM-YYYY'>{from}</Moment>---{' '}
+                <Moment format='DD-MM-YYYY'>{from}</Moment> to {' '}
                 {!to ? 'Continue' : <Moment format='DD-MM-YYYY'>{to}</Moment>}
           </li>
           <li className='collection-item'>

@@ -47,14 +47,17 @@ const CreateProfile = ({ createProfile, history }) => {
 
   return (
     <div className='container'>
+
       <h1 className='large teal-text'>Create Your Profile</h1>
       <h5 className='lead'>
         <i className='fas fa-user'></i> Let's get some information to make your
         profile stand out
       </h5>
+
       <form className='form' onSubmit={(e) => onSubmit(e)}>
+
         <div className='form-group'>
-          <select name='status' onChange={(e) => onChange(e)} value={status}>
+          {/* <select name='status' onChange={(e) => onChange(e)} value={status}>
             <option value='0'>* Select Professional Status</option>
             <option value='Developer'>Developer</option>
             <option value='Junior Developer'>Junior Developer</option>
@@ -64,11 +67,26 @@ const CreateProfile = ({ createProfile, history }) => {
             <option value='Instructor'>Instructor or Teacher</option>
             <option value='Intern'>Intern</option>
             <option value='Other'>Other</option>
-          </select>
+          </select> */}
           <p className='form-text'>
-            Give us an idea of where you are at in your career
+            Give us an idea of where you are at in your career eg:- Actor, Engineer etc.
+          </p>
+          <div className='form-group'>
+          <input
+            type='text'
+            placeholder='Status'
+            name='status'
+            onChange={(e) => onChange(e)}
+            value={status}
+          />
+
+          <p className='form-text'>
+            Could be your own company or one you work for
           </p>
         </div>
+
+        </div>
+
         <div className='form-group'>
           <input
             type='text'
@@ -81,6 +99,7 @@ const CreateProfile = ({ createProfile, history }) => {
             Could be your own company or one you work for
           </p>
         </div>
+
         <div className='form-group'>
           <input
             type='text'
@@ -93,6 +112,7 @@ const CreateProfile = ({ createProfile, history }) => {
             Could be your own or a company website
           </p>
         </div>
+
         <div className='form-group'>
           <input
             type='text'
@@ -105,6 +125,7 @@ const CreateProfile = ({ createProfile, history }) => {
             City & state suggested (eg. Boston, MA)
           </p>
         </div>
+
         <div className='form-group'>
           <input
             type='text'
@@ -117,6 +138,7 @@ const CreateProfile = ({ createProfile, history }) => {
             Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
           </p>
         </div>
+
         <div className='form-group'>
           <input
             type='text'
@@ -130,6 +152,7 @@ const CreateProfile = ({ createProfile, history }) => {
             username
           </p>
         </div>
+        
         <div className='form-group'>
           <textarea
             placeholder='A short bio of yourself'

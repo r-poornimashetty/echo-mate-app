@@ -6,7 +6,7 @@ const connectDB = async () =>{
    try {
          await mongoose.connect(db);
 
-         console.log('MongoDB connected..');
+         console.log('MongoDB connected..mern-app');
    } catch (err) {
       console.log(err.message);
       // Exit process with failure

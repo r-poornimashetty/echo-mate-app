@@ -20,7 +20,7 @@ const Experience = ({ experience, deleteExperience }) => {
   ));
   return (
     <div>
-      <h2 className='my-2'>Education Credentials</h2>
+      <h2 className='my-2'>Work Experience</h2>
       <table className='table'>
         <thead>
           <tr>

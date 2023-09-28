@@ -22,7 +22,7 @@ import AddExperience from './components/profile-forms/AddExperience';
 import AddEducation from './components/profile-forms/AddEducation';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
-import Footer from './components/layout/Footer';
+// import Footer from './components/layout/Footer';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -68,7 +68,7 @@ const App = () => {
 
 
           </section>
-          <Footer />
+          {/* <Footer /> */}
         </Fragment>
       </Router>
     </Provider>
