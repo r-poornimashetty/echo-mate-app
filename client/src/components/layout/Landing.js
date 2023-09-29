@@ -11,10 +11,9 @@ const Landing = ({ isAuthenticated }) => {
       // <section className="container">
       <div className="container">
         <div >
-          <h1 className="x-large  blue-text text-darken-4">Developer Connector</h1>
+          <h1 className="x-large  blue-text text-darken-4">Echo Mate </h1>
           <p className="lead">
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
+           A social media platform
           </p>
           <div className="buttons">
             <Link to="/register" className="btn blue darken-4">Sign Up</Link>

@@ -8,15 +8,16 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
    
     <ul className='right hide-on-med-down'>
-      <li><Link to="/profiles">Developers</Link></li>
+
+      <li><Link to="/profiles"> <i className='fa fa-user' />Developers</Link></li>
       <li>
         <Link to='/dashboard'>
-          <i className='fa fa-user' /> Dashboard
+           Dashboard
         </Link>
       </li>
       <li>
         <Link to='/posts'>
-          <i className='fa fa-user' /> Posts
+          Posts
         </Link>
       </li>
       <li>
@@ -50,11 +51,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   return (
     <div className="navbar-fixed ">
       
-    <nav className='blue darken-4'> 
-      <div className="nav-wrapper ">
+    <nav className='blue darken-4 '> 
+      <div className="nav-wrapper">
         
         <Link to='/' className='brand-logo left'>
-           Developerworld
+          Echo-Mate
         </Link>
         
       {!loading && (
