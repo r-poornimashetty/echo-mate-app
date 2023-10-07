@@ -1,13 +1,11 @@
 option_settings:
   aws:elasticbeanstalk:container:nodejs:
     NodeCommand: "npm start"
-  aws:elasticbeanstalk:container:nodejs:
     ProxyServer: nginx
+    LogPublicationControl: enabled
   aws:elasticbeanstalk:application:environment:
     NODE_ENV: "production"
-  aws:elasticbeanstalk:container:nodejs:
-    LogPublicationControl: enabled
 
 commands:
-  01_custom_command:
-    command: "build_client.sh"
+  01_build_client:
+    command: "chmod +x .ebextensions/build_client.sh && ./.ebextensions/build_client.sh"

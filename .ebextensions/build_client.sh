@@ -1,7 +1,7 @@
 # .ebextensions/build_client.sh
 
 # Navigate to the client directory
-cd /client
+cd client
 
 # Install client dependencies
 npm install
@@ -17,4 +17,4 @@ npm install
 
 # Start the Node.js server
 # Use 'npm start' or specify the command to start your server
-npm start &
+npm start
