@@ -4,9 +4,7 @@ const connectDB = require('./config/db')
 const path = require('path');
 
 /// connect database
-mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
-      console.log("Mongo Connected")
-});
+connectDB();
 
 // Init Middleware
 app.use(express.json({extended: false}));
