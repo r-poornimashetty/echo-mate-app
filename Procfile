@@ -1,1 +1,1 @@
-deploy: ./deploy.sh
+web: cd client && npm install && npm run build && cd .. && npm install && npm start
